@@ -19,3 +19,24 @@ for (let i = 0; i < namen.length; i++) {
     console.log(namen[i]);
 }
 
+// Objects {}
+const hund = {
+    // Attribute, Datenfelder
+    name: 'Bello',
+    alter: 7,
+    // Methoden
+    bellen(anzahl) {
+        for (let index = 0; index < anzahl; index++) {
+            console.log('Wuff');
+        }
+
+    },
+    gruessen() {
+        console.log(`Guten Tag, ich heiße ${this.name}!`);
+    }
+};
+
+hund.bellen(5);
+hund.gruessen();
+
+
